@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+
+    <title></title>
+    <link href="~/Styles/Site.css?v=1" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+        <div class="page">
+            <div class="header">
+                <div class="title">
+                    <h1>
+                        <span class="primary">TIMS</span>
+                        <span class="appName">Tool Inventory Management Software</span>
+                    </h1>
+                </div>
+                <div class="loginDisplay">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                        <AnonymousTemplate>
+                            <a href="~/Account/Login.aspx" ID="HeadLoginStatus" class="logout" runat="server">Log In</a>
+                        </AnonymousTemplate>
+                        <LoggedInTemplate>
+                            <div class="menuItems">
+                                <asp:Button ID="Button1" Text="New Spares" CssClass="MenuButton" runat="server" OnClick="redirecttospares"></asp:Button>
+                                <asp:Button ID="Button2" Text="Issue Spares" CssClass="MenuButton" runat="server" OnClick="redirecttoissue"></asp:Button>
+                                <asp:Button ID="Button3" Text="Balance Spares" CssClass="MenuButton" runat="server" OnClick="redirecttobalance"></asp:Button>
+                            </div>
+                            <span >
+                                <asp:LoginName ID="HeadLoginName" CssClass="userName" runat="server" />
+                            
+                            <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" CssClass="logout" LogoutText="Log Out" LogoutPageUrl="~/Account/Login.aspx" />
+                            </span>
+                        </LoggedInTemplate>
+                    </asp:LoginView>
+                </div>
+            </div>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server" />
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="footer"></div>
+    </form>
+</body>
+</html>

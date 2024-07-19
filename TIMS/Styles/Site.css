@@ -1,0 +1,488 @@
+﻿/* DEFAULTS ----------------------------------------------------------*/
+
+body {
+    background: #f5f5f5;
+    font-size: 1.2em; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+fieldset {
+    border: 2px solid #cccccc;
+}
+
+.padin {
+    margin-top: 20px;
+}
+
+legend {
+    color: #8bc34a;
+}
+
+a:link, a:visited {
+    color: #034af3;
+}
+
+.details-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.details-table th,
+.details-table td {
+    border: 1px solid #ddd;
+    padding: 12px; 
+}
+
+.details-table th {
+    background-color: #f0f0f0;
+    text-align: left;
+    font-size: 1.1em; 
+}
+
+.details-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.details-table tr:hover {
+    background-color: #e9e9e9;
+}
+
+a:hover {
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #034af3;
+}
+
+p {
+    margin-bottom: 10px;
+    line-height: 1.8em; 
+}
+
+/* HEADINGS ----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 1.7em;
+    color: #333;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.8em;
+}
+
+h4 {
+    font-size: 1.6em;
+}
+
+h5, h6 {
+    font-size: 1.5em;
+}
+
+.rightColumn > h1,
+.rightColumn > h2,
+.leftColumn > h1,
+.leftColumn > h2 {
+    margin-top: 0;
+}
+
+/* PRIMARY LAYOUT ELEMENTS ----------------------------------------------------------*/
+
+.page {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.header {
+    background: #2e2e2e;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 1.8em;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+.primary {
+    font-size: 1.2em;
+    color:  #c0ff78;
+    padding-left: 20px;
+    font-weight: bolder;
+}
+
+.appName {
+    font-size: 0.6em;
+    color: #cccccc;
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.menuItems,
+.loginDisplay {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.MenuButton {
+    color: #cccccc;
+    border: 2px solid #444444;
+    background-color: transparent;
+    border-radius: 30px;
+    font-size: 0.8em;
+    padding: 4px 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    
+}
+
+.MenuButton:hover {
+    background-color: #555555;
+    border-color: #555555;
+    color: #fff;
+    cursor: pointer;
+}
+
+.userName {
+    color: #c0ff78;
+    margin-left: 20px;
+    padding: 4px 20px;
+    border: 2px solid #999999;
+    border-radius: 30px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.userName:hover {
+    background-color: #444444;
+    border-color: #999999;
+    color: #fff;
+}
+
+.logout {
+    color: #c0ff78 !important;
+    text-decoration: none !important;
+    margin-left: 10px;
+    padding: 6px 20px;
+    border: 2px solid #999999;
+    border-radius: 30px;
+    font-size: 1em;
+   
+}
+
+.logout:hover {
+    background-color: #444444;
+    border-color: #999999;
+    color: #fff;
+}
+
+.main {
+    padding: 12px;
+    margin: 12px;
+    min-height: 420px;
+}
+
+.leftCol {
+    padding: 6px;
+    margin: 12px;
+    width: 250px;
+    min-height: 200px;
+}
+
+.footer {
+    color: #333;
+    padding: 8px 0;
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+}
+
+/* TAB MENU ----------------------------------------------------------*/
+
+div.hideSkiplink {
+    background-color: #d9e4ea;
+    width: 100%;
+}
+
+div.menu {
+    padding: 8px 0 8px 8px;
+}
+
+div.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+div.menu ul li a,
+div.menu ul li a:visited {
+    background-color: #f0f0f0;
+    border: 1px #cccccc solid;
+    color: #333;
+    display: block;
+    line-height: 1.5em;
+    padding: 8px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 1.2em;
+}
+
+div.menu ul li a:hover {
+    background-color: #e6e6e6;
+    color: #333;
+    text-decoration: none;
+}
+
+div.menu ul li a:active {
+    background-color: #dcdcdc;
+    color: #333;
+    text-decoration: none;
+}
+
+/* FORM ELEMENTS ----------------------------------------------------------*/
+
+fieldset {
+    margin: 1em 0;
+    padding: 1em;
+    border: 1px solid #ccc;
+}
+
+fieldset p {
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label,
+fieldset.register label,
+fieldset.changePassword label {
+    display: block;
+    font-size: 1.2em;
+}
+
+fieldset label.inline {
+    display: inline;
+}
+
+legend {
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry {
+    width: 320px;
+    height: 40px;
+    color: #333;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    background-color: #ffffff;
+    font-size: 1.2em;
+}
+
+.textEntry:activated {
+    border: 1px solid #999999;
+}
+
+input.passwordEntry {
+    width: 320px;
+    border: 1px solid #cccccc;
+    height: 40px;
+    font-size: 1.2em;
+}
+
+div.accountInfo {
+    width: 42%;
+}
+.Label2 
+{
+    display: inline !important;
+}
+.accountInfo label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* MISC ----------------------------------------------------------*/
+
+.clear {
+    clear: both;
+}
+
+.imageButton {
+    float: left;
+    width: 185px;
+    height: 185px;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.imageButton:hover {
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+}
+
+.primaryButton 
+{
+    text-decoration: none !important;
+    color: #c0ff78;
+    background-color: #555555;
+    border: 2px solid #cccccc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.primaryButton:hover 
+{
+    
+    background-color: #222222;
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+
+.dropdown {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 10px;
+    color: #666666;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: 2px solid #cccccc;
+    background-color: transparent;
+    font-size: 1.2em;
+}
+
+.dropdown:cus {
+    color: Black;
+}
+
+.userName {
+    color: #c0ff78;
+    margin: 0 0 0 15px;
+    padding: 8px 20px;
+    border: 2px solid #999999;
+    border-radius: 30px;
+    font-size: large;
+}
+
+.userName:hover {
+    background-color: #444444;
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+
+a.logout {
+    color: #c0ff78 !important;
+    text-decoration: none !important;
+    margin: 0 0px 0 0px;
+    padding: 9px 20px;
+    font-weight: 600;
+    border: 2px solid #999999;
+    border-radius: 30px;
+    font-size: large;
+}
+
+a.logout:hover {
+    background-color: #444444;
+    border: 2px solid #999999;
+    cursor: pointer;
+}
+
+.sizeLarge {
+    font-size: larger;
+}
+
+.loginDisplay {
+    font-size: 1.3em;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.loginDisplay a:link {
+    color: #333;
+}
+
+.loginDisplay a:visited {
+    color: #333;
+    font-family: 'SF Pro Display';
+}
+
+.loginDisplay a:hover {
+    color: #034af3;
+}
+
+.failureNotification {
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.submitButton {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.menu-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.imageButton {
+    margin: 20px;
+    width: 150px; 
+    height: 150px; 
+    padding: 50px;
+    display: inline-block;
+    margin: 50px;
+    justify-content: center;
+    text-align: center; 
+}
+
+.imageLabel {
+    font-size: 1.2em; 
+    margin-top: 10px; 
+    display: block; 
+}
